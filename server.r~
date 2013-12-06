@@ -8,6 +8,8 @@ dim.length<-dimlen
 dim.df.codes<-data.frame(dim.names,dim.codes,dim.length)
 
 
+# Define server logic required to plot various variables against mpg
+# Define server logic required to plot various variables against mpg
 shinyServer(function(input, output) {
   
 
