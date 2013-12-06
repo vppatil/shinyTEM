@@ -1,8 +1,9 @@
 library(shiny)
 library(ncdf)
+library(tcltk) #should ship with base R.
 
 cat("select the nc file you want to work with: ")
-filename<-file.choose()
+filename<-tk_choose.files()
 
 out<-open.ncdf(as.character(filename))
 varnames<-as.vector(names(out$var))
