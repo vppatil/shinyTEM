@@ -78,7 +78,7 @@ shinyServer(function(input, output) {
     dat$var5<-variable.extraction(out,input$variable5)
     dat$var6<-variable.extraction(out,input$variable6)
     
-    dat$YEAR[1:100]=dat$YEAR[1:100]-100#removing the weird spin up period.
+    dat$YEAR[1:101]=dat$YEAR[1:101]-101#removing the weird spin up period.
     
     
     par(mfrow = c(6,1),
